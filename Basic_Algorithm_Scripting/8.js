@@ -1,11 +1,12 @@
 // Truncate a String 💛💚💛
 
 function truncateString(str, num) {
-    let s = ''
     if(str.length > num){
-        
+      return `${str.slice(0, num)}...`
     }
-    return s;
+    else{
+      return str;
+    }
   }
   
 const result = truncateString('A-tisket a-tasket A green and yellow basket', 8);
